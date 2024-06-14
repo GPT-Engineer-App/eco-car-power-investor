@@ -1,4 +1,5 @@
 import { Container, Text, VStack, Heading, Button, Box, Flex } from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
 import { FaLeaf, FaCar, FaBolt } from "react-icons/fa";
 import electricCarBackground from "../../public/images/electric-car-charging.jpg";
 
@@ -50,6 +51,9 @@ const Index = () => {
         </Flex>
         <Button colorScheme="teal" size="lg">
           Invest Now
+        </Button>
+        <Button as={Link} to="/description" colorScheme="teal" size="lg">
+          Learn More
         </Button>
       </VStack>
     </Container>
