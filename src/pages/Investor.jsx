@@ -1,4 +1,5 @@
-import { Container, Text, VStack, Heading, Box, FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, FormControl, FormLabel, Input, Button, useToast } from "@chakra-ui/react";
+import emailjs from 'emailjs-com';
 import { useState } from "react";
 
 const Investor = () => {
@@ -7,6 +8,8 @@ const Investor = () => {
     email: "",
     phone: ""
   });
+
+  const toast = useToast();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,8 +21,26 @@ const Investor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+          toast({
+            title: "Form submitted.",
+            description: "Your details have been sent successfully.",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+          });
+      }, (error) => {
+          console.log(error.text);
+          toast({
+            title: "An error occurred.",
+            description: "Unable to send your details. Please try again later.",
+            status: "error",
+            duration: 5000,
+            isClosable: true,
+          });
+      });
   };
 
   return (
