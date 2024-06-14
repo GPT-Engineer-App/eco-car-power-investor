@@ -42,6 +42,9 @@ const Investor = () => {
         <Text fontSize="xl">
           We appreciate your initiative to be part of the future. Your investment is a step towards a <Text as="span" color="purple.500">sustainable</Text> and <Text as="span" color="gold.500">innovative</Text> tomorrow. Together, we can make a significant impact.
         </Text>
+        <Text fontSize="xl">
+          More details will be shared during the meeting, including a demonstration of the free turbine.
+        </Text>
         <Box as="form" onSubmit={handleSubmit} width="100%">
           <VStack spacing={4}>
             <FormControl id="name" isRequired>

@@ -19,7 +19,7 @@ const Description = () => {
           The Shift from Fuel to Electricity
         </Heading>
         <Text fontSize="xl">
-          As the world continues to battle <Text as="span" color="purple.500">global warming</Text> and <Text as="span" color="gold.500">ozone depletion</Text>, there is a significant shift from fuel to electricity. This transition is crucial for a sustainable future.
+          As the world continues to battle <Text as="span" color="purple.500">global warming</Text> and <Text as="span" color="gold.500">ozone depletion</Text>, there is a significant shift from fossil fuels or non-renewable carbon-emitting fuels to electricity. This transition is crucial for a sustainable future.
         </Text>
         <Text fontSize="xl">
           The demand for electricity is skyrocketing, and traditional methods of generating power are not sufficient to meet this growing need.
