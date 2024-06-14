@@ -32,13 +32,15 @@ const Investor = () => {
       justifyContent="center" 
       alignItems="center" 
       p={4}
+      bg="black"
+      color="white"
     >
       <VStack spacing={8} textAlign="center">
         <Heading as="h1" size="2xl">
           Thank You for Investing in the Future
         </Heading>
         <Text fontSize="xl">
-          We appreciate your initiative to be part of the future. Your investment is a step towards a sustainable and innovative tomorrow. Together, we can make a significant impact.
+          We appreciate your initiative to be part of the future. Your investment is a step towards a <Text as="span" color="purple.500">sustainable</Text> and <Text as="span" color="gold.500">innovative</Text> tomorrow. Together, we can make a significant impact.
         </Text>
         <Box as="form" onSubmit={handleSubmit} width="100%">
           <VStack spacing={4}>
