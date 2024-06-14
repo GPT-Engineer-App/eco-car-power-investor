@@ -49,7 +49,7 @@ const Index = () => {
             <Text mt={2} fontSize="lg" color="black">Renewable Energy</Text>
           </Box>
         </Flex>
-        <Button colorScheme="teal" size="lg">
+        <Button as={Link} to="/investor" colorScheme="teal" size="lg">
           Invest Now
         </Button>
         <Button as={Link} to="/description" colorScheme="teal" size="lg">
