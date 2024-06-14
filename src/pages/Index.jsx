@@ -1,9 +1,22 @@
 import { Container, Text, VStack, Heading, Button, Box, Image, Flex } from "@chakra-ui/react";
 import { FaLeaf, FaCar, FaBolt } from "react-icons/fa";
+import vehicleBackground from "../../public/images/vehicle-themed-background.jpg";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.xl" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" p={4}>
+    <Container 
+      centerContent 
+      maxW="container.xl" 
+      height="100vh" 
+      display="flex" 
+      flexDirection="column" 
+      justifyContent="center" 
+      alignItems="center" 
+      p={4}
+      backgroundImage={`url(${vehicleBackground})`}
+      backgroundSize="cover"
+      backgroundPosition="center"
+    >
       <VStack spacing={8} textAlign="center">
         <Heading as="h1" size="2xl" color="teal.500">
           Invest in the Future of Renewable Energy
